@@ -64,44 +64,50 @@ $(document).ready(function(){
   });
 
   //Scope for Player 2
-    var acquiredscore2 = 0;
-    var totalscore2 = 0;
-    var dicevalue2 = 0;
-    $("#roll2").click(function(){
-      dicevalue2 = dice.roll();
-      if(dicevalue2===1){
-        dicevalue2= 0;
-        acquiredscore2= 0;
-        $("#hold2").attr("disabled",true);
-        $("#roll2").attr("disabled",true);
+    var acquired2 = 0;
+    var total2 = 0;
+    var die1 = 0;
+    var die2 = 0;
+    $("#r2").click(function(){
+      die1 = dice.roll();
+      die2 = dice.roll();
+      if(die1===1 || die2===1){
+        die1 = 0;
+        die2= 0;
+        acquired2= 0;
+        $("#h2").attr("disabled",true);
+        $("#r2").attr("disabled",true);
 
-        $("#hold1").attr("disabled",false);
-        $("#roll1").attr("disabled",false);
-        alert("The Dice landed on 1,game moves to player 1");
+        $("#h1").attr("disabled",false);
+        $("#r1").attr("disabled",false);
+        alert("You rolled a  1,game moves to player 1");
       }
-      $("#dicevalue2").text(dicevalue2);
+      $("#die1").text(die1);
+      $("#die2").text(die2);
 
-      acquiredscore2 += dicevalue2;
-      $("#acquiredscore2").text(acquiredscore2);
+      acquired2 += (die1+die2);
+      $("#acquired2").text(acquired2);
 
     });
-    $("#hold2").click(function(){
-      totalscore2 += acquiredscore2;
-      $("#totalscore2").text(totalscore2);
+    $("#h2").click(function(){
+      total2 += acquired2;
+      $("#total2").text(total2);
 
-      if(totalscore2>=100){
+      if(total2>=100){
         alert("Player 2 Wins!!");
       }else{
-        dicevalue2 = 0;
-        acquiredscore2 = 0;
-        $("#dicevalue2").text(dicevalue2);
-        $("#acquiredscore2").text(acquiredscore2);
+        die1 = 0;
+        die2 = 0;
+        acquired2 = 0;
+        $("#die1").text(die1);
+        $("#die2").text(die2);
+        $("#acquired2").text(acquired2);
 
-        $("#hold2").attr("disabled",true);
-        $("#roll2").attr("disabled",true);
+        $("#h2").attr("disabled",true);
+        $("#r2").attr("disabled",true);
 
-        $("#hold1").attr("disabled",false);
-        $("#roll1").attr("disabled",false);
+        $("#h1").attr("disabled",false);
+        $("#r1").attr("disabled",false);
 
         alert("Player 1's turn");
 
