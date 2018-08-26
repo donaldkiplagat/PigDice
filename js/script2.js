@@ -20,6 +20,19 @@ $(document).ready(function(){
     dice1 =dice.roll();
     dice2 =dice.roll();
 
+    if(dice1===1 && dice2===1){
+      dice1 = 0;
+      dice2 = 0;
+      acquired1 = 0;
+      total1= 0;
+      $("#h1").attr("disabled",true);
+      $("#r1").attr("disabled",true);
+
+      $("#h2").attr("disabled",false);
+      $("#r2").attr("disabled",false);
+      alert("You rolled two 1s,all total points lost,game moves to player 2");
+      $("#total1").text(total1);
+    }
     if(dice1===1 || dice2===1){
       dice1 = 0;
       dice2 = 0;
@@ -71,6 +84,20 @@ $(document).ready(function(){
     $("#r2").click(function(){
       die1 = dice.roll();
       die2 = dice.roll();
+
+      if(die1===1 && die2===1){
+        die1 = 0;
+        die2 = 0;
+        acquired2 = 0;
+        total2= 0;
+        $("#h2").attr("disabled",true);
+        $("#r2").attr("disabled",true);
+
+        $("#h1").attr("disabled",false);
+        $("#r1").attr("disabled",false);
+        alert("You rolled two 1s,all total points lost,game moves to player 1");
+        $("#total2").text(total2);
+      }
       if(die1===1 || die2===1){
         die1 = 0;
         die2= 0;
