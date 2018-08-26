@@ -38,24 +38,26 @@ $(document).ready(function(){
     acquired1 += (dice1+dice2);
     $("#acquired1").text(acquired1);
   });
-  $("#hold1").click(function(){
-    totalscore1 += acquiredscore1;
+  $("#h1").click(function(){
+    total1 += acquired1;
 
-    $("#totalscore1").text(totalscore1);
+    $("#total1").text(total1);
 
-    if(totalscore1>=100){
+    if(total1>=100){
       alert("Player 1 Wins!!")
     }else{
-      dicevalue1= 0;
-      acquiredscore1= 0;
-      $("#dicevalue1").text(dicevalue1);
-      $("#acquiredscore1").text(acquiredscore1);
+      dice1= 0;
+      dice2= 0;
+      acquired1= 0;
+      $("#dice1").text(dice1);
+      $("#dice2").text(dice2);
+      $("#acquired1").text(acquired1);
 
-      $("#hold1").attr("disabled",true);
-      $("#roll1").attr("disabled",true);
+      $("#h1").attr("disabled",true);
+      $("#r1").attr("disabled",true);
 
-      $("#hold2").attr("disabled",false);
-      $("#roll2").attr("disabled",false);
+      $("#h2").attr("disabled",false);
+      $("#r2").attr("disabled",false);
 
       alert("Player 2's turn");
     }
