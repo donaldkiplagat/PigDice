@@ -6,22 +6,22 @@ p{
   font-size: 35px;
 
 }
-#totalscore1{
+#totalscore1, #total1{
   font-size:50px;
 }
-#acquiredscore1{
+#acquiredscore1, #acquired1{
   font-size:50px;
 }
-#dicevalue1{
+#dicevalue1, #dice1, #dice2{
   font-size:50px;
 }
-#totalscore2{
+#totalscore2, #total2{
   font-size:50px;
 }
-#acquiredscore2{
+#acquiredscore2, #acquired2{
   font-size:50px;
 }
-#dicevalue2{
+#dicevalue2, #die1, #die2{
   font-size:50px;
 }
 #well1{
