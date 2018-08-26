@@ -44,7 +44,7 @@ body{
   color: greenyellow;
   font-family: sans-serif;
   margin-bottom: 0px;
-  height: 200px;
+  height: 260px;
 
   background-position: 0% 48%;
 
@@ -60,4 +60,7 @@ h1{
 h2{
   font-size: 35px;
   font-weight:400;
+}
+h5{
+  float:right;
 }
