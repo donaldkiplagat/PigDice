@@ -27,8 +27,7 @@ Output Example: TotalScore += AccummulatedScore<br>
 Input Example: 1<br>
 Output Example: AccummulatedScore=0<br>
 
-* Two Dice: If both dies bring back one then the player's entire score is lost and their turn ends <br>
-
+* Two Dice: If both dies bring back one then the player's entire score is lost and their turn ends.<br> 
 Input Example 1: 1 <br>
 Input Example 2: 1 <br>
 Output Example: TotalScore =0<br>
