@@ -1,3 +1,4 @@
+//Script for One Dice Variation
 //Object defining the dice
 var dice={
   sides: 6,

@@ -1,4 +1,4 @@
-//Script for Two Dice Variation
+//Script for Big Pig Variation
 //Object defining the dice
 var dice={
   sides: 6,
