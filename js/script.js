@@ -33,6 +33,26 @@ $(document).ready(function(){
     acquiredscore1 += dicevalue1;
     $("#acquiredscore1").text(acquiredscore1);
   });
+  $("hold1").click(function(){
+    totalscore1 += acquiredscore1;
+
+    $("#totalscore1").text(totalscore1);
+
+    if(totalscore1>=100){
+      alert("Player 1 Wins!!")
+    }else{
+      $("#dicevalue1").text(dicevalue1);
+      $("#acquiredscore1").text(acquiredscore1);
+
+      $("#hold1").attr("disabled",true);
+      $("#roll1").attr("disabled",true);
+
+      $("#hold2").attr("disabled",true);
+      $("#roll2").attr("disabled",true);
+
+      alert("Player 2's turn");
+    }
+  });
 
 
 
