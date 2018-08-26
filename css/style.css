@@ -1,27 +1,28 @@
+
 h3{
-  font-size: 30px;
+  font-size: 40px;
 }
 p{
-  font-size: 25px;
+  font-size: 35px;
 
 }
 #totalscore1{
-  font-size:40px;
+  font-size:50px;
 }
 #acquiredscore1{
-  font-size:40px;
+  font-size:50px;
 }
 #dicevalue1{
-  font-size:40px;
+  font-size:50px;
 }
 #totalscore2{
-  font-size:40px;
+  font-size:50px;
 }
 #acquiredscore2{
-  font-size:40px;
+  font-size:50px;
 }
 #dicevalue2{
-  font-size:40px;
+  font-size:50px;
 }
 #well1{
   background-color:SkyBlue ;
@@ -30,4 +31,33 @@ p{
 #well2{
   background-color:LightCoral ;
   background-blend-mode: lighten;
+}
+body{
+  background-image: url("../img/bluedice.jpeg");
+  background-position: 0% 48%;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-shadow: Grey 0.9em 0.9em 0.9em;
+}
+.jumbotron{
+  color: greenyellow;
+  font-family: sans-serif;
+  margin-bottom: 0px;
+  height: 200px;
+
+  background-position: 0% 48%;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: DarkSlateBlue;
+
+}
+h1{
+  font-size: 60px;
+  font-weight:400;
+}
+h2{
+  font-size: 35px;
+  font-weight:400;
 }
