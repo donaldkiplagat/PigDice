@@ -47,13 +47,56 @@ $(document).ready(function(){
       $("#hold1").attr("disabled",true);
       $("#roll1").attr("disabled",true);
 
-      $("#hold2").attr("disabled",true);
-      $("#roll2").attr("disabled",true);
+      $("#hold2").attr("disabled",false);
+      $("#roll2").attr("disabled",false);
 
       alert("Player 2's turn");
     }
   });
 
+  //Scope for Player 2
+    var acquiredscore2 = 0;
+    var totalscore2 = 0;
+    var dicevalue2 = 0;
+    $("#roll2").click(function(){
+      dicevalue2 = dice.roll();
+      if(dicevalue2===1){
+        dicevalue2= 0;
+        acquiredscore2= 0;
+        $("#hold2").attr("disabled",true);
+        $("#roll2").attr("disabled",true);
 
+        $("#hold1").attr("disabled",false);
+        $("#roll1").attr("disabled",false);
+        alert("The Dice landed on 1,game moves to player 1");
+      }
+      $("#dicevalue2").text(dicevalue2);
 
+      acquiredscore2 += dicevalue2;
+      $("#acquiredscore2").text(acquiredscore2);
+
+    });
+    $("#hold2").click(function(){
+      totalscore2 += acquiredscore2;
+      $("#totalscore2").text(totalscore2);
+
+      if(totalscore2>=100){
+        alert("Player 2 Wins!!");
+      }else{
+        dicevalue2 = 0;
+        acquiredscore2 = 0;
+        $("#dicevalue2").text(dicevalue2);
+        $("#acquiredscore2").text(acquiredscore2);
+
+        $("#hold2").attr("disabled",true);
+        $("#roll2").attr("disabled",true);
+
+        $("#hold1").attr("disabled",true);
+        $("#roll1").attr("disabled",true);
+
+        alert("Player 1's turn");
+
+      }
+    });
+  
 });
