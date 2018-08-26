@@ -39,7 +39,11 @@ $(document).ready(function(){
     dice2 =dice.roll();
 
     if(dice1===1 && dice2===1){
-      total1 += 25;
+      total1 = 25;
+      dice1 = 0;
+      dice2= 0;
+      acquired1 =0;
+
       $("#h1").attr("disabled",true);
       $("#r1").attr("disabled",true);
 
@@ -109,7 +113,10 @@ $(document).ready(function(){
       die2 = dice.roll();
 
       if(die1===1 && die2===1){
-        total2 += 25;
+        total2 = 25;
+        die1 =0;
+        die2 =0;
+        acquired2 =0;
         $("#h2").attr("disabled",true);
         $("#r2").attr("disabled",true);
 
