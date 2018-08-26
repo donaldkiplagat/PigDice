@@ -1,0 +1,14 @@
+.jumbotron {
+    margin-bottom: 0px;
+    height:320px;
+    background-image: url(../img/pig.jpg);
+    background-position: 0% 50%;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: yellow;
+    text-shadow: black 0.9em 0.9em 0.9em;
+}
+p{
+  font-size: 17px;
+}
