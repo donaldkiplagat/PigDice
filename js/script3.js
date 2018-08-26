@@ -22,16 +22,13 @@ $(document).ready(function(){
     dice2 =dice.roll();
 
     if(dice1===1 && dice2===1){
-      dice1 = 0;
-      dice2 = 0;
-      acquired1 = 0;
-      total1= 0;
+      total1 += 25;
       $("#h1").attr("disabled",true);
       $("#r1").attr("disabled",true);
 
       $("#h2").attr("disabled",false);
       $("#r2").attr("disabled",false);
-      alert("You rolled two 1s,all total points lost,game moves to player 2");
+      alert("You rolled two 1s,you've received 25 points to your total");
       $("#total1").text(total1);
     }
     if(dice1===1 || dice2===1){
@@ -47,12 +44,12 @@ $(document).ready(function(){
 
     }
     if(dice1 === dice2 && dice1!==1 && dice1>0){
-      acquired1 += (dice1+dice2);
+      acquired1 += ((dice1+dice2)*2);
       total1 += acquired1;
       $("#total1").text(total1);
       $("#dice1").text(dice1);
       $("#dice2").text(dice2);
-      alert("You rolled a double! Current points added and another round awarded!")
+      alert("You rolled a double! Current Dice Value multiplied by x2")
     }
     $("#dice1").text(dice1);
     $("#dice2").text(dice2);
@@ -95,16 +92,13 @@ $(document).ready(function(){
       die2 = dice.roll();
 
       if(die1===1 && die2===1){
-        die1 = 0;
-        die2 = 0;
-        acquired2 = 0;
-        total2= 0;
+        total2 += 25;
         $("#h2").attr("disabled",true);
         $("#r2").attr("disabled",true);
 
         $("#h1").attr("disabled",false);
         $("#r1").attr("disabled",false);
-        alert("You rolled two 1s,all total points lost,game moves to player 1");
+        alert("You rolled two 1s,you've received 25 points to your total");
         $("#total2").text(total2);
       }
       if(die1===1 || die2===1){
@@ -119,12 +113,12 @@ $(document).ready(function(){
         alert("You rolled a  1,game moves to player 1");
       }
       if(die1===die2 && die1!==1 && die1>0){
-        acquired2 += (die1+die2);
+        acquired2 += ((die1+die2)*2);
         total2 += acquired2;
         $("#die1").text(die1);
         $("#die2").text(die2);
         $("#total2").text(total2);
-        alert("You rolled a double! Current points added and another round awarded!")
+        alert("You rolled a double! Current Dice value multiplied by x2")
       }
       $("#die1").text(die1);
       $("#die2").text(die2);
