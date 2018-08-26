@@ -45,6 +45,14 @@ $(document).ready(function(){
       alert("You rolled a 1,game moves to player 2");
 
     }
+    if(dice1 === dice2 && dice1!==1 && dice1>0){
+      acquired1 += (dice1+dice2);
+      total1 += acquired1;
+      $("#total1").text(total1);
+      $("#dice1").text(dice1);
+      $("#dice2").text(dice2);
+      alert("You rolled a double! Current points added and another round awarded!")
+    }
     $("#dice1").text(dice1);
     $("#dice2").text(dice2);
 
@@ -108,6 +116,14 @@ $(document).ready(function(){
         $("#h1").attr("disabled",false);
         $("#r1").attr("disabled",false);
         alert("You rolled a  1,game moves to player 1");
+      }
+      if(die1===die2 && die1!==1 && die1>0){
+        acquired2 += (die1+die2);
+        total2 += acquired2;
+        $("#die1").text(die1);
+        $("#die2").text(die2);
+        $("#total2").text(total2);
+        alert("You rolled a double! Current points added and another round awarded!")
       }
       $("#die1").text(die1);
       $("#die2").text(die2);
