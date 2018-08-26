@@ -1,0 +1,33 @@
+h3{
+  font-size: 30px;
+}
+p{
+  font-size: 25px;
+
+}
+#totalscore1{
+  font-size:40px;
+}
+#acquiredscore1{
+  font-size:40px;
+}
+#dicevalue1{
+  font-size:40px;
+}
+#totalscore2{
+  font-size:40px;
+}
+#acquiredscore2{
+  font-size:40px;
+}
+#dicevalue2{
+  font-size:40px;
+}
+#well1{
+  background-color:SkyBlue ;
+  background-blend-mode: lighten;
+}
+#well2{
+  background-color:LightCoral ;
+  background-blend-mode: lighten;
+}
