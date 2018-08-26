@@ -7,8 +7,22 @@ var dice={
     return randomNumber;
   }
 }
+function Gamers(player1,player2){
+  this.player1 = player1;
+  this.player2 = player2;
+}
 
 $(document).ready(function(){
+  $("form#details").submit(function(){
+    event.preventDefault();
+
+    var player1= $("input#player1name").val();
+    var player2= $("input#player2name").val();
+
+    var newGamer = new Gamers(player1,player2);
+    $("#Player1").text(newGamer.player1);
+    $("#Player2").text(newGamer.player2);
+  });
   //Scope for Player 1
   var acquiredscore1 = 0;
   var totalscore1 = 0;

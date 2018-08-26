@@ -6,6 +6,13 @@ p{
   font-size: 35px;
 
 }
+label{
+  font-size: 25px;
+}
+#show{
+  display: none;
+}
+
 #totalscore1, #total1{
   font-size:50px;
 }
@@ -31,6 +38,9 @@ p{
 #well2{
   background-color:LightCoral ;
   background-blend-mode: lighten;
+}
+body,html{
+  height:100%;
 }
 body{
   background-image: url("../img/bluedice.jpeg");
