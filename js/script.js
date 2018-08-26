@@ -22,6 +22,9 @@ $(document).ready(function(){
     var newGamer = new Gamers(player1,player2);
     $("#Player1").text(newGamer.player1);
     $("#Player2").text(newGamer.player2);
+
+    $("#show").show();
+    $(".receive").hide();
   });
   //Scope for Player 1
   var acquiredscore1 = 0;
