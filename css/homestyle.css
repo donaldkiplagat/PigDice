@@ -12,3 +12,15 @@
 p{
   font-size: 17px;
 }
+body,html{
+  height:120%;
+}
+body{
+  background-image: url("../img/coloured.jpg");
+  background-position: 0% 48%;
+  height:100%;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
