@@ -13,33 +13,41 @@
   <body>
     <div class="container">
       <div class="text-center">
+        <div class="jumbotron">
         <h1>Pig Dice</h1>
         <h2>Variation: Big Pig</h1>
+          <a href="index.html" class="btn btn-success btn-lg" >Exit</a>
+        </div>
 
           <div class="row">
             <div id="player1">
               <div class= "col-md-6">
+                <div class="well" id="well1">
                 <h3>Player 1</h3>
-                <p>Total Score: <span id="total1"></span> </p>
-                <p>Acquired Score: <span id="acquired1"></span></p>
-                <p>Dice Value 1: <span id="dice1"></span></p>
-                <p>Dice Value 2: <span id="dice2"></span></p>
-                <button type:"submit" id="r1" class="btn btn-danger">Roll</button>
-                <button type:"submit" id="h1" class="btn btn-primary">Hold</button>
+                <p>Total Score: <br><span id="total1"></span> </p>
+                <p>Acquired Score: <br><span id="acquired1"></span></p>
+                <p>Dice Value 1: <br><span id="dice1"></span></p>
+                <p>Dice Value 2: <br><span id="dice2"></span></p>
+                <button type:"submit" id="r1" class="btn btn-danger btn-lg">Roll</button>
+                <button type:"submit" id="h1" class="btn btn-primary btn-lg">Hold</button>
               </div>
             </div>
+            </div>
+
             <div id="player2">
               <div class="col-md-6">
+                <div class="well" id="well2">
                 <h3>Player 2</h3>
-                <p>Total score: <span id="total2"></span></p>
-                <p>Acquired score: <span id="acquired2"></span></p>
-                <p>Dice Value 1: <span id="die1"></span></p>
-                <p>Dice Value 2: <span id="die2"></span></p>
+                <p>Total score:<br> <span id="total2"></span></p>
+                <p>Acquired score: <br><span id="acquired2"></span></p>
+                <p>Dice Value 1: <br><span id="die1"></span></p>
+                <p>Dice Value 2: <br><span id="die2"></span></p>
 
 
-                <button type="submit" id="r2" class="btn btn-danger">Roll</button>
-                <button type="submit" id="h2" class="btn btn-primary">Hold</button>
+                <button type="submit" id="r2" class="btn btn-danger btn-lg">Roll</button>
+                <button type="submit" id="h2" class="btn btn-primary btn-lg">Hold</button>
               </div>
+            </div>
             </div>
 
           </div>
